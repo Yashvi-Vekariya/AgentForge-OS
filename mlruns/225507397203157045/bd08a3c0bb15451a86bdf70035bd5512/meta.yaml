@@ -1,0 +1,14 @@
+artifact_uri: /home/shyam/Downloads/AgentForge-OS/mlruns/225507397203157045/bd08a3c0bb15451a86bdf70035bd5512/artifacts
+end_time: 1760505113114
+entry_point_name: ''
+experiment_id: '225507397203157045'
+lifecycle_stage: active
+run_id: bd08a3c0bb15451a86bdf70035bd5512
+run_name: agent_workflow
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760505113098
+status: 3
+tags: []
+user_id: shyam
