@@ -1,0 +1,179 @@
+Project Name: AgentForge-OS
+Author: Yashvi Vekariya
+Role: AI Agent Engineer / Data Analyst 
+GitHub: https://github.com/Yashvi-Vekariya/AgentForge-OS
+Frontend: http://localhost:3000
+Backend API: http://localhost:8000
+API Docs: http://localhost:8000/docs
+
+----------------------------------------------------------------------------------------------------
+📌 PROJECT OVERVIEW
+----------------------------------------------------------------------------------------------------
+AgentForge-OS is an **autonomous multi-agent AI operating system** designed to support research, product development, data analysis, code generation, and multimodal reasoning in a single interface.
+
+It combines multiple AI agents (built using state-of-the-art LLMs like Google Gemini 2.5 Flash) and offers a modern chat-based UI with voice controls, file uploads, and real-time collaboration.
+
+This system is built as a next-generation productivity tool for analysts, developers, product teams, and researchers.
+
+----------------------------------------------------------------------------------------------------
+🚀 KEY FEATURES
+----------------------------------------------------------------------------------------------------
+✅ Multi-Agent Collaboration:
+   • Research Agent – For deep research & analysis
+   • Dev Agent – For code generation & architecture
+   • Data Agent – For dataset insights & stats
+   • Vision Agent – For image & visual understanding
+   • Product Agent – For product strategy decisions
+   • Design Agent – For UI/UX guidance
+
+✅ Fully Interactive Chat Interface:
+   • Live chat with AI agents
+   • Agent switching with one click
+   • Typing indicators + real-time responses
+
+✅ Voice AI:
+   • Speech-to-Text input (Click to speak)
+   • Text-to-Speech output (AI speaks back)
+   • Browser-based voice support (Web Speech API)
+
+✅ Advanced File Upload Features:
+   • Image upload (processed by Vision Agent)
+   • Audio upload (auto-transcription)
+   • Document upload for RAG (Retrieval Augmented Generation)
+
+✅ Memory System:
+   • Persistent context-aware conversations
+   • Prior dialog recall powered by vector storage
+
+✅ Safety & Security:
+   • Input sanitization
+   • Secure API key storage
+   • Content safety filters
+
+----------------------------------------------------------------------------------------------------
+🧠 ARCHITECTURE OVERVIEW
+----------------------------------------------------------------------------------------------------
+Backend:
+• Language: Python
+• Framework: FastAPI
+• Main Modules:
+  - llm_manager.py (Gemini 2.5 Flash Integration)
+  - agents/ (Multi-agent functionality)
+  - multimodal/ (Image/Audio processing)
+  - rag/ (Document search using embeddings)
+• REST API Endpoints exposed via Swagger UI
+
+Frontend:
+• React + Vite (or Next.js if customized)
+• Voice support via Web Speech API
+• UI/UX developed with modern responsive design
+
+----------------------------------------------------------------------------------------------------
+🔗 HOW TO RUN LOCALLY
+----------------------------------------------------------------------------------------------------
+
+1️⃣ Backend Setup (FastAPI):
+--------------------------------
+cd app
+pip install -r requirements.txt
+uvicorn api:app --reload --port 8000
+
+Test API at:
+http://localhost:8000/health
+http://localhost:8000/docs
+
+2️⃣ Frontend Setup (React/Next.js):
+-------------------------------------
+cd frontend
+npm install
+npm run dev
+Open in browser:
+http://localhost:3000
+
+----------------------------------------------------------------------------------------------------
+🧪 API ENDPOINT EXAMPLES
+----------------------------------------------------------------------------------------------------
+• GET /health → Health check
+• POST /ask_agent/{agent_type} → Query a specific AI agent
+• GET /agents/available → List of all agents
+• POST /upload_image → Image upload & processing
+• POST /upload_audio → Audio-to-text transcription
+• POST /upload_doc → Upload docs for retrieval
+• POST /rag/query → Natural language query over uploaded documents
+• GET /memory/query → Query conversation memory
+• POST /safety/check → Validate content safety
+
+----------------------------------------------------------------------------------------------------
+💬 SAMPLE INPUT FOR INTERVIEW DEMO
+----------------------------------------------------------------------------------------------------
+
+Input: (Research Agent)
+"Analyze the top emerging AI research trends in 2025 and summarize in 5 bullet points."
+
+Input: (Vision Agent)
+*Upload a diagram or UI screenshot* → "What is happening in this design?"
+
+Input: (Dev Agent)
+"Write a Python function that loads a CSV file and returns average sales per region."
+
+Input: (Data Agent)
+"Analyze this CSV and summarize the top 3 insights."
+
+----------------------------------------------------------------------------------------------------
+📝 COMMON USE CASES
+----------------------------------------------------------------------------------------------------
+• Market research automation
+• AI-powered code review & generation
+• Design feedback using image input
+• Voice-enabled brainstorming sessions
+• Product decision-making workflows
+• Document knowledge querying (RAG)
+
+----------------------------------------------------------------------------------------------------
+💡 INTERVIEW TALKING POINTS
+----------------------------------------------------------------------------------------------------
+✔ Built on modern LLM architecture (Gemini 2.5 Flash)
+✔ Developed complete multi-agent system architecture
+✔ Supports both text + voice + image-based workflows
+✔ Designed UI/UX for effortless human-agent interaction
+✔ Implemented API-first backend for modular integration
+✔ Implements RAG to enable deep-dive document analysis
+✔ Focused on real-world applications like product design, software dev, and analytics assistant
+
+----------------------------------------------------------------------------------------------------
+🛠 TECHNOLOGIES USED
+----------------------------------------------------------------------------------------------------
+Frontend: React.js / Vite, Tailwind CSS, Web Speech API
+Backend: FastAPI, Python 3.10+, Pydantic
+AI Models: Google Gemini 2.5 Flash
+RAG: Vector indexing using embeddings
+Deployment: Local (or cloud-ready)
+Logging: Logging to multi_agent_system.log
+Others: Python-dotenv, CORS, Speech-to-text
+
+----------------------------------------------------------------------------------------------------
+👩‍💻 AUTHOR INFO
+----------------------------------------------------------------------------------------------------
+Name: Yashvi Vekariya
+Role: Data Analyst & AI Agent Engineer
+Email: yashviivekariya@gmail.com
+LinkedIn: https://www.linkedin.com/in/yashvi-vekariya
+GitHub: https://github.com/Yashvi-Vekariya
+
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+🛠️ HOW TO RUN AGENTFORGE-OS LOCALLY (STEP-BY-STEP)
+----------------------------------------------------------------------------------------------------
+
+1. cd AgentForge-OS
+cd app
+python -m venv venv
+venv\Scripts\activate       # Windows
+pip install -r requirements.txt
+uvicorn api:app --reload --port 8000
+uvicorn app.api:app --reload --port 8000
+
+2. cd AgentForge-OS/frontend
+npm install
+npm start

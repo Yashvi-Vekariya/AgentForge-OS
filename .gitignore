@@ -3,10 +3,15 @@
 # dependencies
 frontend/node_modules
 frontend/.env
-.env
-venv
 /.pnp
 .pnp.js
+# dependencies
+frontend/node_modules
+frontend/.env
+.env
+.venv/
+venv
+
 
 # testing
 /coverage
